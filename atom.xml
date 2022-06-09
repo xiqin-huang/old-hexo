@@ -6,7 +6,7 @@
   <link href="https://xiqin-huang.gitee.io/atom.xml" rel="self"/>
   
   <link href="https://xiqin-huang.gitee.io/"/>
-  <updated>2022-06-07T12:45:27.431Z</updated>
+  <updated>2022-06-09T03:26:35.629Z</updated>
   <id>https://xiqin-huang.gitee.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Excel操作技巧</title>
+    <link href="https://xiqin-huang.gitee.io/2022/06/09/ban-gong/excel/"/>
+    <id>https://xiqin-huang.gitee.io/2022/06/09/ban-gong/excel/</id>
+    <published>2022-06-09T03:26:35.625Z</published>
+    <updated>2022-06-09T03:26:35.629Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;01-Excel入门&quot;&gt;&lt;a href=&quot;#01-Excel入门&quot; class=&quot;headerlink&quot; title=&quot;01 Excel入门&quot;&gt;&lt;/a&gt;01 Excel入门&lt;/h2&gt;&lt;p&gt;跨列居中：对齐方式-水平对齐-选定“跨列居中”（Office365</summary>
+        
+      
+    
+    
+    
+    <category term="办公" scheme="https://xiqin-huang.gitee.io/categories/%E5%8A%9E%E5%85%AC/"/>
+    
+    
+    <category term="Excel" scheme="https://xiqin-huang.gitee.io/tags/Excel/"/>
+    
+    <category term="office" scheme="https://xiqin-huang.gitee.io/tags/office/"/>
+    
+    <category term="日常办公" scheme="https://xiqin-huang.gitee.io/tags/%E6%97%A5%E5%B8%B8%E5%8A%9E%E5%85%AC/"/>
+    
+  </entry>
   
   <entry>
     <title>选集_92</title>
@@ -131,8 +160,8 @@
   
   <entry>
     <title>暨大计算机|数学跨考计算机技术经验贴</title>
-    <link href="https://xiqin-huang.gitee.io/2022/06/06/shu-xue-kua-kao-ji-suan-ji-ji-zhu-jing-yan-tie/"/>
-    <id>https://xiqin-huang.gitee.io/2022/06/06/shu-xue-kua-kao-ji-suan-ji-ji-zhu-jing-yan-tie/</id>
+    <link href="https://xiqin-huang.gitee.io/2022/06/06/yan-jiu-sheng/shu-xue-kua-kao-ji-suan-ji-ji-zhu-jing-yan-tie/"/>
+    <id>https://xiqin-huang.gitee.io/2022/06/06/yan-jiu-sheng/shu-xue-kua-kao-ji-suan-ji-ji-zhu-jing-yan-tie/</id>
     <published>2022-06-06T13:24:57.211Z</published>
     <updated>2022-06-07T12:37:04.487Z</updated>
     
@@ -157,56 +186,6 @@
     <category term="考研" scheme="https://xiqin-huang.gitee.io/tags/%E8%80%83%E7%A0%94/"/>
     
     <category term="计算机" scheme="https://xiqin-huang.gitee.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Excel操作技巧</title>
-    <link href="https://xiqin-huang.gitee.io/2022/06/06/excel/"/>
-    <id>https://xiqin-huang.gitee.io/2022/06/06/excel/</id>
-    <published>2022-06-06T02:44:31.356Z</published>
-    <updated>2022-06-06T02:46:14.611Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;01-Excel入门&quot;&gt;&lt;a href=&quot;#01-Excel入门&quot; class=&quot;headerlink&quot; title=&quot;01 Excel入门&quot;&gt;&lt;/a&gt;01 Excel入门&lt;/h2&gt;&lt;p&gt;跨列居中：对齐方式-水平对齐-选定“跨列居中”（Office365</summary>
-        
-      
-    
-    
-    
-    <category term="办公" scheme="https://xiqin-huang.gitee.io/categories/%E5%8A%9E%E5%85%AC/"/>
-    
-    
-    <category term="Excel" scheme="https://xiqin-huang.gitee.io/tags/Excel/"/>
-    
-    <category term="office" scheme="https://xiqin-huang.gitee.io/tags/office/"/>
-    
-    <category term="日常办公" scheme="https://xiqin-huang.gitee.io/tags/%E6%97%A5%E5%B8%B8%E5%8A%9E%E5%85%AC/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="https://xiqin-huang.gitee.io/2022/06/03/hello-world/"/>
-    <id>https://xiqin-huang.gitee.io/2022/06/03/hello-world/</id>
-    <published>2022-06-03T06:56:23.173Z</published>
-    <updated>2022-06-03T02:27:49.482Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
-        
-      
-    
-    
-    
     
   </entry>
   
