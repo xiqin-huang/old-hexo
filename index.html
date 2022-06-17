@@ -331,6 +331,13 @@
 
 <div class="carousel carousel-slider center index-cover" data-indicators="true" style="margin-top: -64px;">
     
+        <div id="prev-cover" class="left waves-effect carousel-control">
+            <i class="icon fa fa-angle-left"></i>
+        </div>
+        <div id="next-cover" class="right waves-effect carousel-control">
+            <i class="icon fa fa-angle-right"></i>
+        </div>
+    
 
     <div class="carousel-item red white-text bg-cover about-cover">
         <div class="container">
@@ -419,6 +426,35 @@
     </div>
 
     
+        
+
+        
+            
+            <div class="carousel-item amber white-text carousel-post bg-cover"
+                 style="background-image: url('/medias/featureimages/20.jpg');">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s10 offset-s1">
+                            <div class="title center-align">韩顺平 零基础30天学会Java</div>
+                            <div class="description center-align">
+                                
+                                    韩顺平 零基础30天学会Java
+第一章 概述了解了该视频课程的大纲和Java的基本知识，Java1995年推出，目前稳定维护的有Java8和Java11版本。
+JVM（Java虚拟机）：JVM包含于JDK中，Java虚拟机机制屏蔽了底层运
+                                
+                            </div>
+                            <div class="cover-btns">
+                                <a href="/2022/06/17/java/han-shun-ping-ling-ji-chu-30-tian-xue-hui-java/han-shun-ping-ling-ji-chu-30-tian-xue-hui-java/" class="waves-effect waves-light btn"
+                                   target="_blank">
+                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    
 </div>
 
 <script>
@@ -439,7 +475,7 @@
         }
 
         coverSlider.carousel({
-            duration: Number('120'),
+            duration: Number('0'),
             fullWidth: true,
             indicators: 'true' === 'true',
             onCycleTo() {
@@ -453,19 +489,8 @@
 
         let carouselIntervalId;
         
-        // Loop to call the next cover article picture.
-        let autoCarousel = function () {
-            carouselIntervalId = setInterval(function () {
-                coverSlider.carousel('next');
-            }, 5000);
-        };
-        autoCarousel();
-        
 
         function restartPlay() {
-            
-            clearInterval(carouselIntervalId);
-            autoCarousel();
             
         };
 
@@ -534,7 +559,7 @@
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2022/06/09/java/han-shun-ping-ling-ji-chu-30-tian-xue-hui-java/han-shun-ping-ling-ji-chu-30-tian-xue-hui-java/">
+                    <a href="/2022/06/17/java/han-shun-ping-ling-ji-chu-30-tian-xue-hui-java/han-shun-ping-ling-ji-chu-30-tian-xue-hui-java/">
                         <div class="card-image">
                             
                             
@@ -554,7 +579,7 @@ JVM（Java虚拟机）：JVM包含于JDK中，Java虚拟机机制屏蔽了底层
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-06-09
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-06-17
                             </span>
                             <span class="publish-author">
                                 
