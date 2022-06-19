@@ -477,7 +477,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="数学"><a href="#数学" class="headerlink" title="数学"></a>数学</h2><pre class="line-numbers language-markup" data-language="markup"><code class="language-markup">等差数列求和：Sn=(a1+an)*n/2;Sn=n*a1+d*(n-1)*n/2
+                <h1 id="数学"><a href="#数学" class="headerlink" title="数学"></a>数学</h1><pre class="line-numbers language-markup" data-language="markup"><code class="language-markup">等差数列求和：Sn=(a1+an)*n/2;Sn=n*a1+d*(n-1)*n/2
 等比数列求和：Sn=a1*(1-qn)/(1-q);Sn=(a1-an*q)/(1-q)
 组合数学：A(n,m)=(n!)/(n-m)!;C(n,m)=A(n,m)/m!=(n!)/((n-m)!*m!<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
@@ -490,13 +490,13 @@
     fibN <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token number">1</span> <span class="token operator">+</span> sqrt5<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token operator">**</span> n <span class="token operator">-</span> <span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token number">1</span> <span class="token operator">-</span> sqrt5<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token operator">**</span> n
 <span class="token keyword">return</span> <span class="token builtin">round</span><span class="token punctuation">(</span>fibN <span class="token operator">/</span> sqrt5<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h2 id="做题小技巧"><a href="#做题小技巧" class="headerlink" title="做题小技巧"></a>做题小技巧</h2><p>综合利用哈希表和前缀和可以解决连续子数组的问题。</p>
+<h1 id="做题小技巧"><a href="#做题小技巧" class="headerlink" title="做题小技巧"></a>做题小技巧</h1><p>综合利用哈希表和前缀和可以解决连续子数组的问题。</p>
 <p>有时候通过将问题的值进行变换，可以将问题转化为一个我们已知的问题或较为简单的问题，例如将0替换成-1，这样就可以使用通过前缀和的知识点来解决子数组中有相同0和1的问题。</p>
 <p>子函数内使用global全局函数关键字</p>
 <p><strong>遍历的小技巧</strong></p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">for</span> i<span class="token punctuation">,</span> w <span class="token keyword">in</span> <span class="token builtin">enumerate</span><span class="token punctuation">(</span>servers<span class="token punctuation">)</span>：i表示索引，w为实际从server中取出来的值<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<h2 id="常用函数"><a href="#常用函数" class="headerlink" title="常用函数"></a>常用函数</h2><h3 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h3><table>
+<h1 id="常用函数"><a href="#常用函数" class="headerlink" title="常用函数"></a>常用函数</h1><h2 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h2><table>
 <thead>
 <tr>
 <th>函数</th>
@@ -516,7 +516,7 @@
 <td>删除元素</td>
 </tr>
 </tbody></table>
-<h3 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h3><table>
+<h2 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h2><table>
 <thead>
 <tr>
 <th>函数</th>
@@ -564,7 +564,7 @@
 <td>删除字符串前边和后边的所有空格，chars参数可以定制删除的字符</td>
 </tr>
 </tbody></table>
-<h3 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h3><table>
+<h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><table>
 <thead>
 <tr>
 <th>函数</th>
@@ -616,7 +616,7 @@
 <td>排序</td>
 </tr>
 </tbody></table>
-<h3 id="Math库"><a href="#Math库" class="headerlink" title="Math库"></a>Math库</h3><table>
+<h2 id="Math库"><a href="#Math库" class="headerlink" title="Math库"></a>Math库</h2><table>
 <thead>
 <tr>
 <th>函数</th>
@@ -648,19 +648,19 @@
 <td>返回x的平方根</td>
 </tr>
 </tbody></table>
-<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="datatime"><a href="#datatime" class="headerlink" title="datatime"></a>datatime</h3><pre class="line-numbers language-python" data-language="python"><code class="language-python">date<span class="token punctuation">.</span>isocalendar<span class="token punctuation">(</span><span class="token punctuation">)</span>        <span class="token comment">#返回结果是三元组(年号，第几周，第几天)</span>
+<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><h2 id="datatime"><a href="#datatime" class="headerlink" title="datatime"></a>datatime</h2><pre class="line-numbers language-python" data-language="python"><code class="language-python">date<span class="token punctuation">.</span>isocalendar<span class="token punctuation">(</span><span class="token punctuation">)</span>        <span class="token comment">#返回结果是三元组(年号，第几周，第几天)</span>
 date<span class="token punctuation">.</span>strftime<span class="token punctuation">(</span><span class="token string">"%j"</span><span class="token punctuation">)</span>        <span class="token comment">#计算输入的日期是一年中的第几天</span>
 end<span class="token operator">=</span>datetime<span class="token punctuation">.</span>datetime<span class="token punctuation">(</span>year<span class="token operator">=</span><span class="token number">2020</span><span class="token punctuation">,</span>month<span class="token operator">=</span><span class="token number">10</span><span class="token punctuation">,</span>day<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span>
 dela<span class="token operator">=</span>datetime<span class="token punctuation">.</span>timedelta<span class="token punctuation">(</span>days<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span>
 <span class="token keyword">if</span> start<span class="token punctuation">.</span>day<span class="token operator">==</span><span class="token number">1</span> <span class="token keyword">or</span> start<span class="token punctuation">.</span>weekday<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">==</span><span class="token number">0</span><span class="token punctuation">:</span><span class="token comment">#月初或周一</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h3 id="优先队列"><a href="#优先队列" class="headerlink" title="优先队列"></a>优先队列</h3><p>优先队列是按照递增进行排列的，弹出的数据是最小的元素，如果想让其递减的排列，可以在前面乘一个-1.</p>
+<h2 id="优先队列"><a href="#优先队列" class="headerlink" title="优先队列"></a>优先队列</h2><p>优先队列是按照递增进行排列的，弹出的数据是最小的元素，如果想让其递减的排列，可以在前面乘一个-1.</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> heapq     <span class="token operator">%</span>导入库函数
 heapq<span class="token punctuation">.</span>heapify<span class="token punctuation">(</span>nums<span class="token punctuation">)</span>     <span class="token operator">%</span>将数组转化为优先队列
 heapq<span class="token punctuation">.</span>heappush<span class="token punctuation">(</span>nums<span class="token punctuation">,</span><span class="token number">7</span><span class="token punctuation">)</span>     <span class="token operator">%</span>往优先队列中插入元素
 num<span class="token operator">=</span>heapq<span class="token punctuation">.</span>heappop<span class="token punctuation">(</span>nums<span class="token punctuation">)</span>     <span class="token operator">%</span>从优先队列中取出元素<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h3 id="类的声明"><a href="#类的声明" class="headerlink" title="类的声明"></a>类的声明</h3><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Potato</span><span class="token punctuation">:</span><span class="token comment">#声明类名</span>
+<h2 id="类的声明"><a href="#类的声明" class="headerlink" title="类的声明"></a>类的声明</h2><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Potato</span><span class="token punctuation">:</span><span class="token comment">#声明类名</span>
     <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>name<span class="token punctuation">)</span><span class="token punctuation">:</span><span class="token comment">#声明构造方法，self用于在类中传递各种属性</span>
           self<span class="token punctuation">.</span>name<span class="token operator">=</span>name
     <span class="token keyword">def</span> <span class="token function">kick</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
@@ -843,13 +843,13 @@ num<span class="token operator">=</span>heapq<span class="token punctuation">.</
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/06/18/kai-fa/xiao-cheng-xu/wei-xin-yun-kai-fa/">
+                <a href="/2022/06/18/ying-ping/qi-mu-nan-xiong-de-zai-nan-86/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="微信云开发">
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="齐木楠雄的灾难_86">
                         
-                        <span class="card-title">微信云开发</span>
+                        <span class="card-title">齐木楠雄的灾难_86</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -866,8 +866,8 @@ num<span class="token operator">=</span>heapq<span class="token punctuation">.</
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%BC%80%E5%8F%91/" class="post-category">
-                                    开发
+                            <a href="/categories/%E5%BD%B1%E8%AF%84/" class="post-category">
+                                    影评
                                 </a>
                             
                             
@@ -877,12 +877,8 @@ num<span class="token operator">=</span>heapq<span class="token punctuation">.</
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E4%BA%91%E5%BC%80%E5%8F%91/">
-                        <span class="chip bg-color">云开发</span>
-                    </a>
-                    
-                    <a href="/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/">
-                        <span class="chip bg-color">微信小程序</span>
+                    <a href="/tags/%E5%8A%A8%E6%BC%AB/">
+                        <span class="chip bg-color">动漫</span>
                     </a>
                     
                 </div>
@@ -1031,7 +1027,7 @@ num<span class="token operator">=</span>heapq<span class="token punctuation">.</
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">47.9k</span>&nbsp;字
+                class="white-color">98.2k</span>&nbsp;字
             
             
             
