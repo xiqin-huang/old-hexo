@@ -29,7 +29,9 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="西芹" type="application/atom+xml">
+<meta name="generator" content="Hexo 5.4.2">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="西芹" type="application/atom+xml">
 </head>
 
 
@@ -448,7 +450,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2.4k
+                    2.3k
                 </div>
                 
 
@@ -475,26 +477,26 @@
             <div id="articleContent">
                 <h1 id="day1"><a href="#day1" class="headerlink" title="day1"></a>day1</h1><h2 id="增删查改"><a href="#增删查改" class="headerlink" title="增删查改"></a>增删查改</h2><p>今天学会了在微信开发中如何对数据库进行增删改查，和进行页面之间的跳转，还有数据之间的传递。</p>
 <pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">wx<span class="token punctuation">.</span>cloud<span class="token punctuation">.</span><span class="token function">database</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">collection</span><span class="token punctuation">(</span><span class="token string">'goods'</span><span class="token punctuation">)</span>
-            <span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
-                <span class="token literal-property property">data</span><span class="token operator">:</span><span class="token punctuation">&#123;</span>
+            <span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+                <span class="token literal-property property">data</span><span class="token operator">:</span><span class="token punctuation">{</span>
                     <span class="token literal-property property">name</span><span class="token operator">:</span>goodname<span class="token punctuation">,</span>
                     <span class="token literal-property property">price</span><span class="token operator">:</span>price
-                <span class="token punctuation">&#125;</span> 
-            <span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+                <span class="token punctuation">}</span> 
+            <span class="token punctuation">}</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h2 id="ID传递"><a href="#ID传递" class="headerlink" title="ID传递"></a>ID传递</h2><p>data-id与后面获取的变量名id相对应</p>
-<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>view</span> <span class="token attr-name">bindtap</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>goDetail<span class="token punctuation">'</span></span> <span class="token attr-name">data-id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>&#123;&#123;item._id&#125;&#125;<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>商品名：&#123;&#123;item.name&#125;&#125;,价格：&#123;&#123;item.price&#125;&#125;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>view</span><span class="token punctuation">></span></span>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>view</span> <span class="token attr-name">bindtap</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>goDetail<span class="token punctuation">'</span></span> <span class="token attr-name">data-id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>{{item._id}}<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>商品名：{{item.name}},价格：{{item.price}}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>view</span><span class="token punctuation">&gt;</span></span>
 
 console.log("点击了跳转商品详情",event.currentTarget.dataset.id)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
 <p><strong>在app.json中的pages新增页面，页面的次序是有影响的</strong></p>
 <h2 id="返回结果"><a href="#返回结果" class="headerlink" title="返回结果"></a>返回结果</h2><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">wx<span class="token punctuation">.</span>cloud<span class="token punctuation">.</span><span class="token function">database</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">collection</span><span class="token punctuation">(</span><span class="token string">'goods'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token operator">=></span><span class="token punctuation">&#123;</span>
+<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
     console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'成功'</span><span class="token punctuation">,</span>res<span class="token punctuation">)</span>
-<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
-<span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token parameter">err</span><span class="token operator">=></span><span class="token punctuation">&#123;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token parameter">err</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
     console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'失败'</span><span class="token punctuation">,</span>err<span class="token punctuation">)</span>
-<span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <hr>
 <br>
@@ -552,45 +554,45 @@ console.log("点击了跳转商品详情",event.currentTarget.dataset.id)<span a
 </tbody></table>
 <h2 id="绑定事件"><a href="#绑定事件" class="headerlink" title="绑定事件"></a>绑定事件</h2><p>前端界面绑定方法，bindtap点击事件，bindinput输入事件，然后在后端函数中获取值</p>
 <pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token comment">// 前端页面</span>
-<span class="token operator">&lt;</span>input bindinput<span class="token operator">=</span><span class="token string">"getPrice"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>input<span class="token operator">></span>
+<span class="token operator">&lt;</span>input bindinput<span class="token operator">=</span><span class="token string">"getPrice"</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>input<span class="token operator">&gt;</span>
 <span class="token comment">// 后端页面</span>
-<span class="token function">getPrice</span><span class="token punctuation">(</span><span class="token parameter">event</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+<span class="token function">getPrice</span><span class="token punctuation">(</span><span class="token parameter">event</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
         price <span class="token operator">=</span> event<span class="token punctuation">.</span>detail<span class="token punctuation">.</span>value
-    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h2 id="弹窗提示确认是否删除"><a href="#弹窗提示确认是否删除" class="headerlink" title="弹窗提示确认是否删除"></a>弹窗提示确认是否删除</h2><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">wx<span class="token punctuation">.</span><span class="token function">showModal</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
+<h2 id="弹窗提示确认是否删除"><a href="#弹窗提示确认是否删除" class="headerlink" title="弹窗提示确认是否删除"></a>弹窗提示确认是否删除</h2><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">wx<span class="token punctuation">.</span><span class="token function">showModal</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
           <span class="token literal-property property">cancelColor</span><span class="token operator">:</span> <span class="token string">'cancelColor'</span><span class="token punctuation">,</span>
           <span class="token literal-property property">title</span><span class="token operator">:</span><span class="token string">"是否确定删除"</span><span class="token punctuation">,</span>
           <span class="token literal-property property">content</span><span class="token operator">:</span><span class="token string">"您再仔细想一想，是否真的要删除，删除后不可恢复"</span><span class="token punctuation">,</span>
-          <span class="token function">success</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-              <span class="token keyword">if</span><span class="token punctuation">(</span>res<span class="token punctuation">.</span>confirm<span class="token operator">==</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span><span class="token comment">//用户点击了确认</span>
+          <span class="token function">success</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+              <span class="token keyword">if</span><span class="token punctuation">(</span>res<span class="token punctuation">.</span>confirm<span class="token operator">==</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token comment">//用户点击了确认</span>
                 console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'点击确定'</span><span class="token punctuation">,</span>res<span class="token punctuation">)</span>
-              <span class="token punctuation">&#125;</span><span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>res<span class="token punctuation">.</span>cancel<span class="token operator">==</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span><span class="token comment">//用户点击了取消</span>
+              <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>res<span class="token punctuation">.</span>cancel<span class="token operator">==</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token comment">//用户点击了取消</span>
                 console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'点击取消'</span><span class="token punctuation">,</span>res<span class="token punctuation">)</span>
-              <span class="token punctuation">&#125;</span>
-          <span class="token punctuation">&#125;</span>
-        <span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+              <span class="token punctuation">}</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h2 id="页面跳转"><a href="#页面跳转" class="headerlink" title="页面跳转"></a>页面跳转</h2><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">wx<span class="token punctuation">.</span><span class="token function">navigateTo</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
+<h2 id="页面跳转"><a href="#页面跳转" class="headerlink" title="页面跳转"></a>页面跳转</h2><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">wx<span class="token punctuation">.</span><span class="token function">navigateTo</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
               <span class="token literal-property property">url</span><span class="token operator">:</span> <span class="token string">'/pages/demo1/demo1'</span><span class="token punctuation">,</span>
-            <span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+            <span class="token punctuation">}</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
 <h2 id="升序排列"><a href="#升序排列" class="headerlink" title="升序排列"></a>升序排列</h2><p>asc表示升序，desc为降序，前面是关键字</p>
-<pre class="line-numbers language-none"><code class="language-none">.orderBy(&quot;price&quot;,&#39;asc&#39;)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-none"><code class="language-none">.orderBy("price",'asc')<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <h2 id="command命令筛选"><a href="#command命令筛选" class="headerlink" title="command命令筛选"></a>command命令筛选</h2><p>可以在微信开放文档<a href="https://">https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference-sdk-api/database/Command.html</a>中查看具体，常见的有gt大于，lt小于,gte大于等于</p>
 <p>还可以使用and关键字设置多个查找条件，要注意格式and([]),[]中用{}包裹筛选条件</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token punctuation">.</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token punctuation">.</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
         <span class="token literal-property property">price</span><span class="token operator">:</span>db<span class="token punctuation">.</span>command<span class="token punctuation">.</span><span class="token function">gt</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
-    <span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
     
 <span class="token comment">// 组合查找</span>
-<span class="token punctuation">.</span><span class="token function">where</span><span class="token punctuation">(</span>_<span class="token punctuation">.</span><span class="token function">and</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">&#123;</span>
+<span class="token punctuation">.</span><span class="token function">where</span><span class="token punctuation">(</span>_<span class="token punctuation">.</span><span class="token function">and</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">{</span>
             <span class="token literal-property property">price</span><span class="token operator">:</span> _<span class="token punctuation">.</span><span class="token function">gt</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span>
-        <span class="token punctuation">&#125;</span><span class="token punctuation">,</span> <span class="token comment">//大于10</span>
-        <span class="token punctuation">&#123;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token comment">//大于10</span>
+        <span class="token punctuation">{</span>
             <span class="token literal-property property">price</span><span class="token operator">:</span> _<span class="token punctuation">.</span><span class="token function">lt</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span>
-        <span class="token punctuation">&#125;</span><span class="token punctuation">,</span> <span class="token comment">//小于20</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token comment">//小于20</span>
     <span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h2 id="云函数"><a href="#云函数" class="headerlink" title="云函数"></a>云函数</h2><h3 id="初始化云函数"><a href="#初始化云函数" class="headerlink" title="初始化云函数"></a>初始化云函数</h3><p>新增的文件夹一定要与pages平级，可以先点击与pages平级的文件，再点击新增文件夹，命名为cloud，或者在云函数列表中右键新增node.js云函数</p>
@@ -603,38 +605,38 @@ console.log("点击了跳转商品详情",event.currentTarget.dataset.id)<span a
 <h3 id="云函数的调用"><a href="#云函数的调用" class="headerlink" title="云函数的调用"></a>云函数的调用</h3><p>使用callFunction,在name处填写需要调用的云函数名称</p>
 <pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token comment">//云函数的调用</span>
 <span class="token comment">//传统写法</span>
-wx<span class="token punctuation">.</span>cloud<span class="token punctuation">.</span><span class="token function">callFunction</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
+wx<span class="token punctuation">.</span>cloud<span class="token punctuation">.</span><span class="token function">callFunction</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
     <span class="token literal-property property">name</span><span class="token operator">:</span><span class="token string">'getData'</span><span class="token punctuation">,</span>
-    <span class="token function">success</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+    <span class="token function">success</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
         console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'请求云函数成功'</span><span class="token punctuation">,</span>res<span class="token punctuation">)</span>
-    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
-    <span class="token function">fail</span><span class="token punctuation">(</span><span class="token parameter">err</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">fail</span><span class="token punctuation">(</span><span class="token parameter">err</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
         console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'请求云函数失败'</span><span class="token punctuation">,</span>res<span class="token punctuation">)</span>
-    <span class="token punctuation">&#125;</span>
-<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
 <span class="token comment">// 建议写法</span>
-wx<span class="token punctuation">.</span>cloud<span class="token punctuation">.</span><span class="token function">callFunction</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
+wx<span class="token punctuation">.</span>cloud<span class="token punctuation">.</span><span class="token function">callFunction</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
     <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'getData'</span>
-<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
-<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">res</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">res</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
     console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'成功'</span><span class="token punctuation">,</span> res<span class="token punctuation">)</span>
-    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setData</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setData</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
       <span class="token comment">// 传递值</span>
         <span class="token literal-property property">openid</span><span class="token operator">:</span> res<span class="token punctuation">.</span>result<span class="token punctuation">.</span>openid
-    <span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
-<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
-<span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token parameter">err</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token parameter">err</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
     console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'失败'</span><span class="token punctuation">,</span> err<span class="token punctuation">)</span>
-<span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h3 id="云函数获取数据"><a href="#云函数获取数据" class="headerlink" title="云函数获取数据"></a>云函数获取数据</h3><p>云函数只要有变动,就要重新部署,否则云函数不生效</p>
 <p>部署选择上传并部署:云端安装依赖(不上传node_modules)</p>
 <p>如果只改变了js文件，可点击对应的js文件，右键选择云函数增量上传：更新文件</p>
 <p>而且在云函数中操作数据库时，不再需要写wx，wx只在本地编写的时候才需要写</p>
 <p><strong>有多个云开发环境的时候，需要指定环境，或者使用DYNAMIC_CURRENT_ENV指定为当前环境（提倡写法）</strong></p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">cloud<span class="token punctuation">.</span><span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">cloud<span class="token punctuation">.</span><span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
   <span class="token literal-property property">env</span><span class="token operator">:</span> cloud<span class="token punctuation">.</span><span class="token constant">DYNAMIC_CURRENT_ENV</span>
-<span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
 <hr>
 <h1 id="day3"><a href="#day3" class="headerlink" title="day3"></a>day3</h1><p>文件可以导出为json格式，可以使用记事本进行打开</p>
@@ -642,13 +644,13 @@ wx<span class="token punctuation">.</span>cloud<span class="token punctuation">.
 <p>云函数一次最多可返回100条数据，本地一次最多可返回20条数据。</p>
 <p><strong>云函数中console在云端打印，我们在调试器中只能看到本地的console。</strong></p>
 <h2 id="向云函数传递值"><a href="#向云函数传递值" class="headerlink" title="向云函数传递值"></a>向云函数传递值</h2><p>在data中传递值，在云函数中使用event接收对应的值</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">wx<span class="token punctuation">.</span>cloud<span class="token punctuation">.</span><span class="token function">callFunction</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">wx<span class="token punctuation">.</span>cloud<span class="token punctuation">.</span><span class="token function">callFunction</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
     name <span class="token operator">=</span> <span class="token string">'update0129'</span><span class="token punctuation">,</span>
-    <span class="token literal-property property">data</span><span class="token operator">:</span><span class="token punctuation">&#123;</span>
+    <span class="token literal-property property">data</span><span class="token operator">:</span><span class="token punctuation">{</span>
         <span class="token literal-property property">id</span><span class="token operator">:</span>id<span class="token punctuation">,</span>
         <span class="token literal-property property">price</span><span class="token operator">:</span><span class="token number">20</span>
-    <span class="token punctuation">&#125;</span>
-<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
 <span class="token comment">// 云函数</span>
 event<span class="token punctuation">.</span>id和event<span class="token punctuation">.</span>price<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
@@ -659,71 +661,71 @@ event<span class="token punctuation">.</span>id和event<span class="token punctu
 <h2 id="选择文件接口"><a href="#选择文件接口" class="headerlink" title="选择文件接口"></a>选择文件接口</h2><p><strong>用户选择文件接口（api)</strong></p>
 <p><a href="https://">https://developers.weixin.qq.com/miniprogram/dev/api/media/image/wx.chooseMedia.html</a></p>
 <p>也可以选择chooseImage接口</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token function">chooseImg</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token function">chooseImg</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token comment">//上传图片的第一步</span>
-    wx<span class="token punctuation">.</span><span class="token function">chooseImage</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
+    wx<span class="token punctuation">.</span><span class="token function">chooseImage</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
         <span class="token literal-property property">count</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token comment">//可以选择多少张图片</span>
         <span class="token literal-property property">sizeType</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'original'</span><span class="token punctuation">,</span> <span class="token string">'compressed'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
         <span class="token literal-property property">sourceType</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'album'</span><span class="token punctuation">,</span> <span class="token string">'camera'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment">//设置图片来源</span>
-        <span class="token function-variable function">success</span><span class="token operator">:</span><span class="token parameter">res</span><span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+        <span class="token function-variable function">success</span><span class="token operator">:</span><span class="token parameter">res</span><span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
             <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">uploadImg</span><span class="token punctuation">(</span>res<span class="token punctuation">.</span>tempFilePaths<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-        <span class="token punctuation">&#125;</span>
-    <span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
-<span class="token punctuation">&#125;</span><span class="token punctuation">,</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h2 id="文件上传"><a href="#文件上传" class="headerlink" title="文件上传"></a>文件上传</h2><p>然后就可以对获取到的文件进行上传</p>
 <p><a href="https://">https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference-sdk-api/storage/uploadFile/client.uploadFile.html</a></p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token function">uploadImg</span><span class="token punctuation">(</span><span class="token parameter">temfile</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token function">uploadImg</span><span class="token punctuation">(</span><span class="token parameter">temfile</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
     console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'要上传图片的临时路径'</span><span class="token punctuation">,</span>temfile<span class="token punctuation">)</span>
-    wx<span class="token punctuation">.</span>cloud<span class="token punctuation">.</span><span class="token function">uploadFile</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
+    wx<span class="token punctuation">.</span>cloud<span class="token punctuation">.</span><span class="token function">uploadFile</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
         <span class="token literal-property property">cloudPath</span><span class="token operator">:</span> <span class="token string">'西芹1.png'</span><span class="token punctuation">,</span>
         <span class="token literal-property property">filePath</span><span class="token operator">:</span> temfile<span class="token punctuation">,</span> <span class="token comment">// 文件路径</span>
-        <span class="token function-variable function">success</span><span class="token operator">:</span> <span class="token parameter">res</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+        <span class="token function-variable function">success</span><span class="token operator">:</span> <span class="token parameter">res</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
           console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'上传成功'</span><span class="token punctuation">,</span>res<span class="token punctuation">)</span>
-        <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
-        <span class="token function-variable function">fail</span><span class="token operator">:</span> <span class="token parameter">err</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token function-variable function">fail</span><span class="token operator">:</span> <span class="token parameter">err</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
           console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'上传失败'</span><span class="token punctuation">,</span>err<span class="token punctuation">)</span>
-        <span class="token punctuation">&#125;</span>
-      <span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
-<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>点击预览即可在手机上体验使用小程序上传图片</p>
 <h1 id="day5"><a href="#day5" class="headerlink" title="day5"></a>day5</h1><p>存储图片路径，使用存储中的下载地址，复制的时候注意不要复制问号后面的东西，因为是时间戳，可能导致图片失效。</p>
 <h2 id="上传视频"><a href="#上传视频" class="headerlink" title="上传视频"></a>上传视频</h2><p><a href="https://">https://developers.weixin.qq.com/miniprogram/dev/api/media/video/wx.chooseVideo.html</a></p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">wx<span class="token punctuation">.</span><span class="token function">chooseVideo</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">wx<span class="token punctuation">.</span><span class="token function">chooseVideo</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
   <span class="token literal-property property">sourceType</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'album'</span><span class="token punctuation">,</span><span class="token string">'camera'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
   <span class="token literal-property property">maxDuration</span><span class="token operator">:</span> <span class="token number">60</span><span class="token punctuation">,</span>
   <span class="token literal-property property">camera</span><span class="token operator">:</span> <span class="token string">'back'</span><span class="token punctuation">,</span>
-  <span class="token function">success</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token function">success</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">.</span>tempFilePath<span class="token punctuation">)</span>
-  <span class="token punctuation">&#125;</span>
-<span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>上传视频有时候比较慢，需要耐心等待。</p>
 <p>通过type值判断是上传视频还是图片</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token operator">&lt;</span>image wx<span class="token operator">:</span><span class="token keyword">if</span><span class="token operator">=</span><span class="token string">"&#123;&#123;showImg&#125;&#125;"</span> src<span class="token operator">=</span><span class="token string">"&#123;&#123;imgUrl&#125;&#125;"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>image<span class="token operator">></span>
-<span class="token operator">&lt;</span>video wx<span class="token operator">:</span><span class="token keyword">if</span><span class="token operator">=</span><span class="token string">"&#123;&#123;showVideo&#125;&#125;"</span> src<span class="token operator">=</span><span class="token string">"&#123;&#123;videoUrl&#125;&#125;"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>video<span class="token operator">></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token operator">&lt;</span>image wx<span class="token operator">:</span><span class="token keyword">if</span><span class="token operator">=</span><span class="token string">"{{showImg}}"</span> src<span class="token operator">=</span><span class="token string">"{{imgUrl}}"</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>image<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>video wx<span class="token operator">:</span><span class="token keyword">if</span><span class="token operator">=</span><span class="token string">"{{showVideo}}"</span> src<span class="token operator">=</span><span class="token string">"{{videoUrl}}"</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>video<span class="token operator">&gt;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 <h2 id="上传Word和PDF文件"><a href="#上传Word和PDF文件" class="headerlink" title="上传Word和PDF文件"></a>上传Word和PDF文件</h2><p><a href="https://">https://developers.weixin.qq.com/miniprogram/dev/api/media/image/wx.chooseMessageFile.html</a></p>
 <p>从客户端会话选择文件。</p>
-<pre class="line-numbers language-none"><code class="language-none">wx.chooseMessageFile(&#123;
+<pre class="line-numbers language-none"><code class="language-none">wx.chooseMessageFile({
   count: 10,
-  type: &#39;image&#39;,
-  success (res) &#123;
-    &#x2F;&#x2F; tempFilePath可以作为img标签的src属性显示图片
-    const tempFilePaths &#x3D; res.tempFiles
-  &#125;
-&#125;)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+  type: 'image',
+  success (res) {
+    // tempFilePath可以作为img标签的src属性显示图片
+    const tempFilePaths = res.tempFiles
+  }
+})<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h2 id="文件下载"><a href="#文件下载" class="headerlink" title="文件下载"></a>文件下载</h2><p><a href="https://">https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference-sdk-api/storage/downloadFile/client.downloadFile.html</a></p>
 <p>从云存储空间下载文件</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">wx<span class="token punctuation">.</span>cloud<span class="token punctuation">.</span><span class="token function">downloadFile</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">wx<span class="token punctuation">.</span>cloud<span class="token punctuation">.</span><span class="token function">downloadFile</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
   <span class="token literal-property property">fileID</span><span class="token operator">:</span> <span class="token string">'a7xzcb'</span>
-<span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">res</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">res</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
     console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'下载成功'</span><span class="token punctuation">)</span>
-<span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token parameter">error</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token parameter">error</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
     console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'下载失败'</span><span class="token punctuation">)</span>
-<span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h1 id="day6"><a href="#day6" class="headerlink" title="day6"></a>day6</h1><p>vue文件中，data初始化需要使用的数据，生命周期函数写在methods外面，而自定义的函数写在methods内。</p>
 <p><strong>传递值不需要setdata，只需要this.变量名=值即可。</strong></p>
@@ -972,18 +974,17 @@ event<span class="token punctuation">.</span>id和event<span class="token punctu
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/06/19/bian-cheng/wei-xin-yun-kai-fa/">
+                <a href="/2022/06/20/new/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="微信云开发">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="new">
                         
-                        <span class="card-title">微信云开发</span>
+                        <span class="card-title">new</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -993,33 +994,16 @@ event<span class="token punctuation">.</span>id和event<span class="token punctu
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-06-19
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-06-20
+                        </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E7%BC%96%E7%A8%8B/" class="post-category">
-                                    编程
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            xiqin
                             
                         </span>
                     </div>
-                </div>
-
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E4%BA%91%E5%BC%80%E5%8F%91/">
-                        <span class="chip bg-color">云开发</span>
-                    </a>
-                    
-                    <a href="/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/">
-                        <span class="chip bg-color">微信小程序</span>
-                    </a>
-                    
                 </div>
                 
             </div>
@@ -1215,7 +1199,7 @@ event<span class="token punctuation">.</span>id和event<span class="token punctu
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">98.2k</span>&nbsp;字
+                class="white-color">97.9k</span>&nbsp;字
             
             
             
