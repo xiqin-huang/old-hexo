@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>HeadFirst Java</title>
+      <link href="/2022/10/14/bian-cheng/shang-huo-gu-git/"/>
+      <url>/2022/10/14/bian-cheng/shang-huo-gu-git/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Git使用"><a href="#Git使用" class="headerlink" title="Git使用"></a>Git使用</h1><p><code>C:\\Users\\86136\\git.config</code>是Git的配置文件。</p><p>按住ctrl键，滑动鼠标中键可以放大和缩小字体大小。</p><p>使用init命令创建库成功后，会在该文件夹下创建一个.git文件夹，默认是隐藏的，可以通过显示隐藏项目进行查看。</p><p>红色代表该文件只存在于工作区，绿色代表文件已经上传到暂存区。</p><p>只有将暂存区的文件提交到本地库，才会形成本地的历史记录。</p><p>git是以行的作为维护的，所以在原来的行上修改，会先删除改行，然后重新写入修改后的行。</p><p>在.git文件夹下的refs的heads目录的main文件可以查看当前版本号。</p><p><strong>合并分支时，两个分支在同一个文件的同一个位置上有两套完全不同的修改，Git无法替我们决定使用哪一个，必须人为决定新代码内容。</strong></p><p><strong>首先使用vim命令对内容进行合并，然后将文件提交到暂存区，最后执行提交(注意此时使用git commit命令时不能带文件名)。此时修改的只是当前分支，合并进来的分支的文件不会被修改。</strong></p><p>各个分支其实都是指向具体版本的指针，当前所在的分支其实是由HEAD指针决定的，所以创建分支的本质就是多创建一个指针。</p><p>clone操作会进行如下操作：1、拉取代码。2、初始化本地仓库。3、创建别名。</p><p>fork别人代码后进行修改完成后，可以通过点击pull request想对方发送请求。对方可以在pull request查看，如果可以的话点击Merge pull request进行合并。</p><h1 id="Git常用命令"><a href="#Git常用命令" class="headerlink" title="Git常用命令"></a>Git常用命令</h1><table><thead><tr><th>命令名称</th><th>作用</th></tr></thead><tbody><tr><td>git config –global user.name 用户名</td><td>设置用户签名</td></tr><tr><td>git config –global user.email 邮箱</td><td>设置用户邮箱</td></tr><tr><td>git init</td><td>初始化本地库</td></tr><tr><td>git status</td><td>查看本地库状态</td></tr><tr><td>git add 文件名</td><td>添加到暂存区</td></tr><tr><td>git commit -m “日志信息” 文件名</td><td>提交到本地库</td></tr><tr><td>git reflog</td><td>查看历史记录</td></tr><tr><td>git reset –hard 版本号</td><td>版本穿梭，版本号为reflog命令的七位随机码</td></tr><tr><td>git add 文件名</td><td>将文件加入到暂存区</td></tr><tr><td>git rm –cached 文件名</td><td>删除暂存区中的文件</td></tr><tr><td>git commit -m “日志信息” 文件名</td><td>将暂存区的文件提交到本地库中</td></tr><tr><td>git reflog</td><td>查看版本信息</td></tr><tr><td>git log</td><td>查看详细版本信息</td></tr><tr><td>git branch 分支名</td><td>创建分支</td></tr><tr><td>git branch -v</td><td>查看分支</td></tr><tr><td>git checkout ‘分支名’</td><td>切换分支</td></tr><tr><td>git merge 分支名</td><td>把指定的分组合并到当前分支上</td></tr><tr><td>git remote -v</td><td>查看当前所有远程地址别名</td></tr><tr><td>git remote add 别名 远程地址</td><td>起别名</td></tr><tr><td>git push 别名 分支</td><td>推送本地分支上的内容到远程仓库</td></tr><tr><td>git clone 远程地址</td><td>将远程仓库的内容克隆到本地</td></tr><tr><td>git pull 远程库地址别名 远程分支名</td><td>将远程仓库对应分支最新内容拉下来后与当前本地分支直接合并</td></tr></tbody></table><h1 id="Linux常用命令"><a href="#Linux常用命令" class="headerlink" title="Linux常用命令"></a>Linux常用命令</h1><table><thead><tr><th>命令名称</th><th>作用</th></tr></thead><tbody><tr><td>ll</td><td>显示当前目录下的文档详细信息，加上-a可以查看隐藏信息</td></tr><tr><td>ls</td><td>当前目录的文档名</td></tr><tr><td>yy</td><td>复制当前行，需要退出编辑状态</td></tr><tr><td>p</td><td>粘贴当前行，需要退出编辑状态</td></tr><tr><td>i或insert</td><td>进入编辑状态</td></tr><tr><td>:wq!</td><td>退出编辑状态</td></tr><tr><td>cat 文件名</td><td>查看对应文件</td></tr><tr><td>clear</td><td>清除当前界面的命令行</td></tr></tbody></table><p>使用vim命令创建新文件时，需要按i键或insert键进入编辑状态。退出编辑状态则是按esc键，然后输入<code>:wq!</code>回车退出。</p><h1 id="Git集成IDEA"><a href="#Git集成IDEA" class="headerlink" title="Git集成IDEA"></a>Git集成IDEA</h1><p>创建忽略规则文件<code>xxx.ignore</code>，来屏蔽不需要的文件，因为这些文件与项目的实际功能无关，不参与服务器部署运行，把它们忽略掉能够屏蔽IDE工具之间的差异。配置文件后在.gitconfig文件中设置引用该文件。</p><pre class="line-numbers language-none"><code class="language-none">//git.ignore文件配置，写上需要忽略的文件后缀# Compiled class file*.class# Log file*.log# BlueJ files*.ctxt# Mobile Tools for Java (J2ME).mtj.tmp/# Package Files #*.jar*.war*.nar*.ear*.zip*.tar.gz*.rarhs_err_pid*.classpath.project.settingstarget.idea*.iml//.gitconfig文件[core]  excludesfile = git.ignore文件所在路径，记得将反斜线(/)改为斜线(\)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>idea则是在设置的Version Control下的Git，并设置路径为Git安装目录的C:\Program Files\Git\bin\git.exe。</p><p>设置完成后还需要完成初始化，在VCS(Version Control Setting)下选择import into Version Control下的Create Git Repository才算真正完成初始化，此时Git接管了该项目。</p><p>蓝色的代表之前已经被追踪过，可以不用add，直接commit到本地库。</p><p>如果想要将本地代码库推送到远程库，一定要保证本地库的版本要比远程库的版本高。因此一共成熟的程序员在动手改本地代码之前，一定会先检查远程库和本地库代码的区别。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 编程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> java学习路线 </tag>
+            
+            <tag> 计算机基础 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>稀缺-[美]穆来纳森-97</title>
       <link href="/2022/10/06/shu-ji/xi-que-mei-mu-lai-na-sen-97/"/>
       <url>/2022/10/06/shu-ji/xi-que-mei-mu-lai-na-sen-97/</url>
