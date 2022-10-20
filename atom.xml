@@ -6,7 +6,7 @@
   <link href="https://xiqin-huang.github.io/atom.xml" rel="self"/>
   
   <link href="https://xiqin-huang.github.io/"/>
-  <updated>2022-10-14T08:23:50.064Z</updated>
+  <updated>2022-10-20T11:31:17.001Z</updated>
   <id>https://xiqin-huang.github.io/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>韩顺平 零基础30天学会Java</title>
+    <link href="https://xiqin-huang.github.io/2022/10/20/java/han-shun-ping-ling-ji-chu-30-tian-xue-hui-java/han-shun-ping-ling-ji-chu-30-tian-xue-hui-java/"/>
+    <id>https://xiqin-huang.github.io/2022/10/20/java/han-shun-ping-ling-ji-chu-30-tian-xue-hui-java/han-shun-ping-ling-ji-chu-30-tian-xue-hui-java/</id>
+    <published>2022-10-20T11:31:17.001Z</published>
+    <updated>2022-10-20T11:31:17.001Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://www.bilibili.com/video/BV1fh411y7R8?p=9&amp;amp;spm_id_from=pageDriver&quot;&gt;韩顺平 零基础30天学会Java&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;第一章-概述&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="java" scheme="https://xiqin-huang.github.io/categories/java/"/>
+    
+    
+    <category term="java" scheme="https://xiqin-huang.github.io/tags/java/"/>
+    
+    <category term="java基础" scheme="https://xiqin-huang.github.io/tags/java%E5%9F%BA%E7%A1%80/"/>
+    
+    <category term="java学习路线" scheme="https://xiqin-huang.github.io/tags/java%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/"/>
+    
+  </entry>
   
   <entry>
     <title>尚硅谷Git</title>
@@ -94,9 +124,9 @@
     <category term="电子书" scheme="https://xiqin-huang.github.io/categories/%E7%94%B5%E5%AD%90%E4%B9%A6/"/>
     
     
-    <category term="电子书" scheme="https://xiqin-huang.github.io/tags/%E7%94%B5%E5%AD%90%E4%B9%A6/"/>
-    
     <category term="书籍" scheme="https://xiqin-huang.github.io/tags/%E4%B9%A6%E7%B1%8D/"/>
+    
+    <category term="电子书" scheme="https://xiqin-huang.github.io/tags/%E7%94%B5%E5%AD%90%E4%B9%A6/"/>
     
   </entry>
   
@@ -168,36 +198,6 @@
         
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://www.bilibili.com/video/BV1Kb411W75N?p=666&amp;amp;vd_source=636bdfc4ce8c201bed8740cf77c11dda&quot;&gt;尚硅谷Java入门视频教程&lt;/a&gt;&lt;/p&gt;
 &lt;h1</summary>
-        
-      
-    
-    
-    
-    <category term="java" scheme="https://xiqin-huang.github.io/categories/java/"/>
-    
-    
-    <category term="java" scheme="https://xiqin-huang.github.io/tags/java/"/>
-    
-    <category term="java基础" scheme="https://xiqin-huang.github.io/tags/java%E5%9F%BA%E7%A1%80/"/>
-    
-    <category term="java学习路线" scheme="https://xiqin-huang.github.io/tags/java%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>韩顺平 零基础30天学会Java</title>
-    <link href="https://xiqin-huang.github.io/2022/09/20/java/han-shun-ping-ling-ji-chu-30-tian-xue-hui-java/han-shun-ping-ling-ji-chu-30-tian-xue-hui-java/"/>
-    <id>https://xiqin-huang.github.io/2022/09/20/java/han-shun-ping-ling-ji-chu-30-tian-xue-hui-java/han-shun-ping-ling-ji-chu-30-tian-xue-hui-java/</id>
-    <published>2022-09-20T02:43:45.319Z</published>
-    <updated>2022-09-20T02:43:45.319Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://www.bilibili.com/video/BV1fh411y7R8?p=9&amp;amp;spm_id_from=pageDriver&quot;&gt;韩顺平 零基础30天学会Java&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&quot;第一章-概述&quot;&gt;&lt;a</summary>
         
       
     
