@@ -6,7 +6,7 @@
   <link href="https://xiqin-huang.github.io/atom.xml" rel="self"/>
   
   <link href="https://xiqin-huang.github.io/"/>
-  <updated>2022-10-20T11:52:20.028Z</updated>
+  <updated>2022-10-22T07:44:56.946Z</updated>
   <id>https://xiqin-huang.github.io/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>HeadFirst Java</title>
+    <link href="https://xiqin-huang.github.io/2022/10/22/java/headfirst-java/"/>
+    <id>https://xiqin-huang.github.io/2022/10/22/java/headfirst-java/</id>
+    <published>2022-10-22T07:44:56.946Z</published>
+    <updated>2022-10-22T07:44:56.946Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;ol&gt;
+&lt;li&gt;当某个对象被java虚拟机察觉不会被使用到，该对象就会被标记成可回收的。如果内存开始不足，垃圾收集器就会启动来清理垃圾、回收空间，让空间能够再次被利用。&lt;/li&gt;
+&lt;li&gt;任何变量只要加上public、static和final，基本上都会变成全局变量取用的常数。</summary>
+        
+      
+    
+    
+    
+    <category term="java" scheme="https://xiqin-huang.github.io/categories/java/"/>
+    
+    
+    <category term="java" scheme="https://xiqin-huang.github.io/tags/java/"/>
+    
+    <category term="书籍" scheme="https://xiqin-huang.github.io/tags/%E4%B9%A6%E7%B1%8D/"/>
+    
+    <category term="java基础" scheme="https://xiqin-huang.github.io/tags/java%E5%9F%BA%E7%A1%80/"/>
+    
+    <category term="java学习路线" scheme="https://xiqin-huang.github.io/tags/java%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/"/>
+    
+  </entry>
   
   <entry>
     <title>韩顺平 零基础30天学会Java</title>
@@ -178,9 +211,9 @@
     <category term="书籍" scheme="https://xiqin-huang.github.io/categories/%E4%B9%A6%E7%B1%8D/"/>
     
     
-    <category term="人物传记" scheme="https://xiqin-huang.github.io/tags/%E4%BA%BA%E7%89%A9%E4%BC%A0%E8%AE%B0/"/>
-    
     <category term="历史政治" scheme="https://xiqin-huang.github.io/tags/%E5%8E%86%E5%8F%B2%E6%94%BF%E6%B2%BB/"/>
+    
+    <category term="人物传记" scheme="https://xiqin-huang.github.io/tags/%E4%BA%BA%E7%89%A9%E4%BC%A0%E8%AE%B0/"/>
     
   </entry>
   
@@ -189,7 +222,7 @@
     <link href="https://xiqin-huang.github.io/2022/09/25/java/java8-xin-te-xing/"/>
     <id>https://xiqin-huang.github.io/2022/09/25/java/java8-xin-te-xing/</id>
     <published>2022-09-25T02:45:41.829Z</published>
-    <updated>2022-09-24T06:55:57.472Z</updated>
+    <updated>2022-10-20T12:11:13.127Z</updated>
     
     
       
@@ -236,31 +269,6 @@
     
     
     <category term="科技人文" scheme="https://xiqin-huang.github.io/tags/%E7%A7%91%E6%8A%80%E4%BA%BA%E6%96%87/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>批判性思维-[美]摩尔-95</title>
-    <link href="https://xiqin-huang.github.io/2022/08/09/shu-ji/pi-pan-xing-si-wei-mei-mo-er-95/"/>
-    <id>https://xiqin-huang.github.io/2022/08/09/shu-ji/pi-pan-xing-si-wei-mei-mo-er-95/</id>
-    <published>2022-08-09T02:00:52.376Z</published>
-    <updated>2022-08-09T02:00:52.376Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;摘抄&quot;&gt;&lt;a href=&quot;#摘抄&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="书籍" scheme="https://xiqin-huang.github.io/categories/%E4%B9%A6%E7%B1%8D/"/>
-    
-    
-    <category term="心理学" scheme="https://xiqin-huang.github.io/tags/%E5%BF%83%E7%90%86%E5%AD%A6/"/>
     
   </entry>
   
