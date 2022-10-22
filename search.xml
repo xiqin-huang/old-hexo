@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>研一九月月报</title>
+      <link href="/2022/10/22/yan-jiu-sheng/yan-yi-jiu-yue-yue-bao/"/>
+      <url>/2022/10/22/yan-jiu-sheng/yan-yi-jiu-yue-yue-bao/</url>
+      
+        <content type="html"><![CDATA[<h1 id="视频"><a href="#视频" class="headerlink" title="视频"></a>视频</h1><ol><li>韩顺平零基础30天学完java的第三阶段，主要学习了网络编程和数据库操作。<a href="https://xiqin-huang.gitee.io/2022/09/20/java/han-shun-ping-ling-ji-chu-30-tian-xue-hui-java/han-shun-ping-ling-ji-chu-30-tian-xue-hui-java/">视频笔记</a></li><li>宋红康 - 全网最全Java零基础入门教程java8部分，学习了lambda表达式和Stream API。</li></ol><h1 id="书籍"><a href="#书籍" class="headerlink" title="书籍"></a>书籍</h1><ol><li>《半小时漫画计算机》和《码农翻身》，科普式的计算机书，很有意思。</li><li>《淘宝技术这十年》，老师推荐看的，还不错。</li><li>《网络是怎么链接的》，计算机网络相关书籍。</li><li>《浪潮之巅》，了解了众多科技公司兴衰。<a href="https://xiqin-huang.gitee.io/2022/09/10/shu-ji/lang-chao-zhi-dian-wu-jun-93/">读书笔记</a></li></ol><h1 id="本月总结"><a href="#本月总结" class="headerlink" title="本月总结"></a>本月总结</h1><p>本月最大的工作应该是把韩老师的java零基础课程看完，说实话这个视频真的干货满满，我从中学到了很多。然后java8则是掌握了更多java8编程的技巧。然后看了一些计算机的书籍，加深了对计算机的理解。本来是想着每周写一次周报的，但是课业压力挺大的，老师布置的作用挺有挑战性的，然后平时也得给实验室干活，所以感觉月报会更适合，可以更宏观的进行规划。未来的模式应该也是每月月报，然后按照鱼皮的java学习路线继续往下学。</p><h1 id="未来计划"><a href="#未来计划" class="headerlink" title="未来计划"></a>未来计划</h1><h2 id="必须完成"><a href="#必须完成" class="headerlink" title="必须完成"></a>必须完成</h2><ol><li>阅读《HeadFrist Java》。</li><li>阅读《稀缺-我们是怎么陷入贫穷与忙碌的》，《置身事内》。</li><li>阅读《图解HTTP》，《程序是怎么运行的》，《MySQL必知必会》。</li></ol><h2 id="尽量学习"><a href="#尽量学习" class="headerlink" title="尽量学习"></a>尽量学习</h2><ol><li>观看尚硅谷 Java 数据结构与算法，并配合LeetCode刷题。</li><li>学习计算机网络，观看计算机网络微课堂，并阅读对应书籍《深入浅出计算机网络》。</li><li>阅读小林的《图解计算机网络》。</li><li>学习数据库，阅读《MySQL是怎样运行的》。</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 研究生 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 月报 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>HeadFirst Java</title>
       <link href="/2022/10/22/java/headfirst-java/"/>
       <url>/2022/10/22/java/headfirst-java/</url>
@@ -1112,9 +1137,9 @@
             
             <tag> Python </tag>
             
-            <tag> 算法 </tag>
-            
             <tag> 编程 </tag>
+            
+            <tag> 算法 </tag>
             
         </tags>
       
@@ -1141,9 +1166,9 @@
             
             <tag> Python </tag>
             
-            <tag> 算法 </tag>
-            
             <tag> 编程 </tag>
+            
+            <tag> 算法 </tag>
             
         </tags>
       
