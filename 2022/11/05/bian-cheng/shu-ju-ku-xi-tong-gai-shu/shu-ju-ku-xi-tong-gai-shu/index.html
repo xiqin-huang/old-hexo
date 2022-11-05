@@ -450,7 +450,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    8.4k
+                    8.3k
                 </div>
                 
 
@@ -641,8 +641,8 @@
 <p>$BCNF$：设关系模式$R{\langle}U,F\rangle{\in}1NF$，如果对于R的每个函数依赖$X{\rightarrow}Y，且X{\not\supset}Y时$,X必含有码，那么$R{\in}BCNF$。即在关系模型R中，每个决定因素都包含码。3NF出现问题是因为存在主属性J部分依赖于码$(S,T)$，因此$BCNF$的关系模式中要求没有任何属性对码的部分函数依赖和传递函数依赖。</p>
 <p>如果一个关系数据库中的所有关系模式都属于$BCNF$，那么在函数依赖范畴内，它已实现模式的彻底分解，达到了最高的规范化程度，消除了操作异常等诸多问题。</p>
 <p><strong>1NF消除非主属性对码的部分函数依赖满足2NF，2NF消除非主属性对码的传递函数依赖满足3NF，3NF消除主属性对码的部分和传递函数依赖满足BCNF，BCNF消除非平凡且非函数依赖的多值依赖满足4NF。</strong></p>
-<h2 id="模式分解"><a href="#模式分解" class="headerlink" title="模式分解"></a>模式分解</h2><p>${\rho}={R_1{\langle}U_1,F_1\rangle,\dots,{R_n{\langle}U_n,F_n\rangle}是R{\langle}U,F\rangle$的一个分解，若对$R{\langle}U,F\rangle$的任何一个关系$r均有r=r在\rho$中各关系模式上的投影的自然连接成立，则称分解$\rho$具有无损连接性，简称无损分解。<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/151039521">无损分解算法</a></p>
-<p>${\rho}={R_1{\langle}U_1,F_1\rangle,\dots,{R_n{\langle}U_n,F_n\rangle}是R{\langle}U,F\rangle$的一个分解，若$F$所逻辑蕴含的函数依赖一定也为分解后所有的关系模式中的函数依赖$F_i$所逻辑蕴含，即$F^+=(F_1{\cup}F_2{\cup}\dots{\cup}F_n)^+$，则称关系模式$R$的这个分解是保持函数依赖的。</p>
+<h2 id="模式分解"><a href="#模式分解" class="headerlink" title="模式分解"></a>模式分解</h2><p>记${\rho}={R_1{\langle}U_1,F_1\rangle,\dots,{R_n{\langle}U_n,F_n\rangle}是R{\langle}U,F\rangle的一个分解，若对R{\langle}U,F\rangle的任何一个关系r均有r=r在\rho中各关系模式上的投影的自然连接成立，则称分解\rho$具有无损连接性，简称无损分解。<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/151039521">无损分解算法</a></p>
+<p>记${\rho}={R_1{\langle}U_1,F_1\rangle,\dots,{R_n{\langle}U_n,F_n\rangle}是R{\langle}U,F\rangle的一个分解，若F所逻辑蕴含的函数依赖一定也为分解后所有的关系模式中的函数依赖F_i所逻辑蕴含，即F^+=(F_1{\cup}F_2{\cup}\dots{\cup}F_n)^+，则称关系模式R$的这个分解是保持函数依赖的。</p>
 <table>
 <thead>
 <tr>
@@ -702,7 +702,6 @@
 <p>视图转换：如果查询是对视图的操作，则要用视图消解法把对视图的操作转换成对基本表的操作。</p>
 <p><strong>查询优化的选择依据：基于规则、基于代价和基于语义。</strong></p>
 <h2 id="代数优化"><a href="#代数优化" class="headerlink" title="代数优化"></a>代数优化</h2><p>连接、笛卡尔积交换律：设$E_1$和$E_2$是关系代数表达式，$F$是连接关系运算的条件，则有$E_1{\times}E_2{\equiv}E_2{\times}E_1;E_1{\bowtie}E_2{\equiv}E_2{\bowtie}E_1;E_1{\triangleright}_F{\triangleleft}E_2{\equiv}E_2{\triangleright}_F{\triangleleft}E_1$。也有类似的结合律。</p>
-<p>选择的串联定理，$E$是关系代数表达式，$F_1,F_2$是选择条件，有${\delta}<em>{F_1}({\delta}</em>{F_2}(E)){\equiv}{\delta}_{F_1{\land}F_2}(E)$。</p>
 <p>此外还有选择与投影操作、笛卡尔、并、差、自然连接都有分配率，投影与笛卡尔积、并的分配律。</p>
 <h3 id="代数优化步骤"><a href="#代数优化步骤" class="headerlink" title="代数优化步骤"></a>代数优化步骤</h3><ol>
 <li>从查询$Q$出发，按照事先约定的规则对Q进行变换，获得$Q_1，Q_1$必须与$Q$等价。</li>
@@ -1122,7 +1121,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">155.6k</span>&nbsp;字
+                class="white-color">155.5k</span>&nbsp;字
             
             
             
