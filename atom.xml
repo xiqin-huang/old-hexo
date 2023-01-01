@@ -6,7 +6,7 @@
   <link href="https://xiqin-huang.github.io/atom.xml" rel="self"/>
   
   <link href="https://xiqin-huang.github.io/"/>
-  <updated>2022-12-03T09:31:46.606Z</updated>
+  <updated>2023-01-01T02:28:29.524Z</updated>
   <id>https://xiqin-huang.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>研一十二月月报</title>
+    <link href="https://xiqin-huang.github.io/2023/01/01/yan-jiu-sheng/yan-yi-shi-er-yue-yue-bao/"/>
+    <id>https://xiqin-huang.github.io/2023/01/01/yan-jiu-sheng/yan-yi-shi-er-yue-yue-bao/</id>
+    <published>2023-01-01T02:28:29.524Z</published>
+    <updated>2023-01-01T02:28:29.524Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;视频&quot;&gt;&lt;a href=&quot;#视频&quot; class=&quot;headerlink&quot; title=&quot;视频&quot;&gt;&lt;/a&gt;视频&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;深入浅出计算机网络，目前看完了概述和网络层部分，现在正在看数据链路层。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&quot;书籍&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="研究生" scheme="https://xiqin-huang.github.io/categories/%E7%A0%94%E7%A9%B6%E7%94%9F/"/>
+    
+    
+    <category term="月报" scheme="https://xiqin-huang.github.io/tags/%E6%9C%88%E6%8A%A5/"/>
+    
+  </entry>
   
   <entry>
     <title>研一十一月月报</title>
@@ -535,33 +563,6 @@
     
     
     <category term="游记" scheme="https://xiqin-huang.github.io/tags/%E6%B8%B8%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>微信云开发</title>
-    <link href="https://xiqin-huang.github.io/2022/06/19/bian-cheng/wei-xin-yun-kai-fa/"/>
-    <id>https://xiqin-huang.github.io/2022/06/19/bian-cheng/wei-xin-yun-kai-fa/</id>
-    <published>2022-06-19T03:42:37.213Z</published>
-    <updated>2022-06-19T03:42:37.214Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;day1&quot;&gt;&lt;a href=&quot;#day1&quot; class=&quot;headerlink&quot; title=&quot;day1&quot;&gt;&lt;/a&gt;day1&lt;/h1&gt;&lt;h2 id=&quot;增删查改&quot;&gt;&lt;a href=&quot;#增删查改&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="编程" scheme="https://xiqin-huang.github.io/categories/%E7%BC%96%E7%A8%8B/"/>
-    
-    
-    <category term="云开发" scheme="https://xiqin-huang.github.io/tags/%E4%BA%91%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="微信小程序" scheme="https://xiqin-huang.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
     
   </entry>
   
